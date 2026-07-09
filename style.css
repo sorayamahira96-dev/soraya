@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    position: relative;
+}
+
+.cell {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 30px;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player {
+    margin: 5px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
